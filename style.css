@@ -1,0 +1,156 @@
+/* overall page  */
+* {
+  margin: 0;
+  font-family: "Outfit", serif;
+}
+
+:root {
+  --font-color-head: hsl(14, 45%, 36%);
+  --font-color-pera: hsl(24, 5%, 18%);
+  --font-color-card-pera: hsl(332, 51%, 32%);
+  --card-color: hsl(330, 100%, 98%);
+}
+
+/* common style  */
+body {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(243, 230, 216);
+}
+
+.container {
+  background-color: white;
+  border-radius: 20px;
+  width: 50%;
+  padding: 40px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+section {
+  padding-bottom: 20px;
+}
+
+hr {
+  background-color: rgb(212, 208, 208);
+  border: none;
+  height: 1px;
+}
+
+p,
+li {
+  color: var(--font-color-pera);
+  font-weight: 500;
+}
+
+li {
+  padding: 5px 0 5px 15px;
+}
+
+ol > li::marker {
+  color: var(--font-color-head);
+  font-weight: 600;
+}
+
+ul,
+ol {
+  padding-left: 25px;
+}
+
+.points {
+  font-weight: 600;
+}
+
+/* End of common style  */
+
+/* image section */
+.banner img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+/* End of image section */
+
+/* about section */
+.head_1 {
+  font-family: "Young sefir", serif;
+  font-weight: 700;
+  font-size: 38px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  color: var(--font-color-pera);
+}
+
+.heading {
+  font-family: "Young Serif", serif;
+  color: var(--font-color-head);
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 20px 0 20px;
+}
+
+.about_pera {
+  padding: 10px 0 10px;
+}
+
+.preparation_time_card {
+  background-color: var(--card-color);
+  border-radius: 10px;
+  padding: 25px;
+  margin: 20px 0 20px;
+}
+
+.preparation_head {
+  color: var(--font-color-card-pera);
+  padding: 5px 0 5px;
+  font-weight: 700;
+}
+
+.card_list {
+  padding: 10px 0 10px;
+}
+
+/* End of about section */
+
+/* Ingradient section  */
+/* Instruction section */
+
+/* Nutrition section */
+.nutrations_table {
+  padding: 10px 0 10px;
+}
+
+.nutrations_list {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  padding: 15px 20px 15px;
+}
+
+.value {
+  color: var(--font-color-head);
+  font-weight: 600;
+}
+
+/* End of Nutrition section */
+
+/* responsive  for phone */
+@media (max-width: 375px) {
+  .container {
+    border-radius: 0px;
+    width: 100%;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .banner img {
+    border-radius: 0px;
+  }
+
+  .sub_container {
+    padding: 0px 15px;
+  }
+}
+
+/* End of responsive section for phone */
